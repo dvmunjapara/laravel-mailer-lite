@@ -28,13 +28,13 @@ export const useUserStore = defineStore({
           })
           .then((response) => {
             this.user = response.data.user
-            this.hasToken = this.user.email?.length > 0
+            this.hasToken = response.data.user?.email?.length > 0
             this.error = undefined
             this.loading = false
             resolve(response)
           })
           .catch((err) => {
-            this.error = err.response.data.message
+            this.error = err.response?.data?.message
             this.loading = false
             reject(err)
           })
@@ -49,13 +49,13 @@ export const useUserStore = defineStore({
           .post(`${base_url}/token`, data)
           .then((response) => {
             this.user = response.data.user
-            this.hasToken = this.user.email?.length > 0
+            this.hasToken = this.user?.email?.length > 0
             this.error = undefined
             this.loading = false;
             resolve(response)
           })
           .catch((err) => {
-            this.error = err.response.data.message
+            this.error = err.response?.data?.message
             this.loading = false
             reject(err)
           })

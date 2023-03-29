@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import User from "../views/User.vue";
+import Subscribers from "../views/Subscribers.vue";
 import Login from "../views/Login.vue";
 import {useUserStore} from "@/stores/users";
 
@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: User,
+      component: Subscribers,
       meta: {
         require_token: true,
       }
