@@ -11,6 +11,8 @@
 
 > Please find SQL file in database folder
 
+> Please set mailer lite token in env for unit tests
+
 # Frontend steps
 
 - cd resources/frontend/
