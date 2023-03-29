@@ -5,6 +5,7 @@
 - cp .env.example .env
 - Set env values
 - composer install
+- php artisan key:generate
 - php artisan test
 - php artisan serve
 
