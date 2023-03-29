@@ -236,7 +236,7 @@ export default {
             <span class="block sm:inline">{{subscriberStore.error}}</span>
           </div>
 
-          <button :disabled="subscriberStore.loading" class="px-6 py-2 ml-2 text-white bg-white text-black border border-green-400 rounded" @click="cancelUpdateSubscriber">
+          <button :disabled="subscriberStore.loading" class="px-6 py-2 ml-2 bg-white text-black border border-green-400 rounded" @click="cancelUpdateSubscriber">
             Cancel
           </button>
 
